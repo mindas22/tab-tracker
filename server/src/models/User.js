@@ -25,7 +25,7 @@ module.exports = (sequelize, DataTypes) => {
     password: DataTypes.STRING
   }, {
     hooks: {
-      // TODO: investigate this why we dont need them.
+      // This should be used beforeSave alone, or beforeCreate and beforeUpdate
       // beforeCreate: hashPassword,
       // beforeUpdate: hashPassword,
       beforeSave: hashPassword

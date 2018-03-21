@@ -4,7 +4,7 @@
     <span
     class="home"
     @click="navigateTo({name: 'root'})">
-   RCG Unipupil
+   TAB-Tracker
     </span>
   </v-toolbar-title>
 
